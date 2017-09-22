@@ -1,0 +1,14 @@
+.site-footer {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  .option {
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    background: linear-gradient(to bottom right, $white, darken($white, 10%));
+    box-shadow: .125rem .25rem .5rem rgba($black, .5);
+    &:not(:last-of-type) {
+      margin: 0 0 .5rem;
+    }
+  }
+}

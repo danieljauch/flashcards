@@ -1,0 +1,39 @@
+.site-header {
+  height: 4rem;
+  margin-bottom: 2rem;
+  .user {
+    float: right;
+    margin: 1rem;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    filter: drop-shadow(.125rem .25rem .5rem rgba($black, .5));
+    background: linear-gradient(
+      to bottom right,
+      $white,
+      darken($white, 10%)
+    );
+    .name {
+      font-weight: bold;
+    }
+    i {
+      font-size: 2rem;
+      background: $black;
+      width: 3rem;
+      height: 3rem;
+      border-radius: 1.5rem;
+      text-align: center;
+      padding: .25rem;
+      margin: -1rem -1.5rem -1.5rem .5rem;
+      float: right;
+      box-shadow: .125rem .25rem .5rem rgba($black, .5);
+    }
+    &.daniel i {
+      color: $blue;
+      border: .25rem solid $blue;
+    }
+    &.linzy i {
+      color: $pink;
+      border: .25rem solid $pink;
+    }
+  }
+}

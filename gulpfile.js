@@ -13,10 +13,10 @@ const watch = require('gulp-watch');
 const util = require('gulp-util');
 
 gulp.task('css', () => {
-  gulp.src('src/scss/**/*.scss')
+  gulp.src('scss/**/*.scss')
     .pipe(compass({
-      sass: 'src/scss',
-      css: 'src/css'
+      sass: 'scss',
+      css: 'css'
     }))
     .pipe(autoprefixer({
       browsers: ['last 5 versions', 'ie >= 11', '> 5%'],
@@ -25,22 +25,22 @@ gulp.task('css', () => {
     }))
     .pipe(plumber())
     .pipe(cleanCSS())
-    .pipe(gulp.dest('src/css'));
+    .pipe(gulp.dest('css'));
 });
 gulp.task('js', () => {
-  gulp.src('src/js/dev/*.js')
+  gulp.src('js/dev/*.js')
+    .pipe(concat('../app.js'))
     .pipe(babel({
       presets: ['es2015', 'es2017', 'react']
     }))
-    .pipe(concat('../app.js'))
     .pipe(uglify().on('error', err => {
       util.log(util.colors.red('[Error]'), err.toString());
     }))
     .pipe(plumber())
-    .pipe(gulp.dest('src/js/prod/'));
+    .pipe(gulp.dest('js/prod/'));
 });
 gulp.task('watch', () => {
-  gulp.watch('src/scss/**/*.scss', ['css']);
-  gulp.watch('src/js/dev/*.js', ['js']);
+  gulp.watch('scss/**/*.scss', ['css']);
+  gulp.watch('js/dev/*.js', ['js']);
 });
 gulp.task('default', ['watch']);

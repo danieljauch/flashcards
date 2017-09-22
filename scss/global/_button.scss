@@ -1,0 +1,31 @@
+button {
+  display: block;
+  margin: 0 auto;
+  padding: .5rem;
+  font-size: 2rem;
+  background: $white;
+  border: .125rem solid transparent;
+  border-radius: 1rem;
+  width: 10rem;
+  box-shadow: .125rem .25rem .5rem rgba($black, .5);
+  cursor: pointer;
+  transition: {
+    property: color, background, box-shadow, border, transform;
+    duration: .2s;
+    timing-function: $cubic;
+  }
+  &:hover, &:focus {
+    transform: translate(-2px, -4px);
+    background: $blue;
+    color: rgba($white, .9);
+    box-shadow: .25rem .5rem .5rem $black;
+  }
+  &:active {
+    transition-duration: .1s;
+    transform: translate(0, -1px);
+    background: darken($blue, 10%);
+    color: $white;
+    border: .125rem solid $blue;
+    box-shadow: .125rem .25rem .5rem rgba($black, .5);
+  }
+}

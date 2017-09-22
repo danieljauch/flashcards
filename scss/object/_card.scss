@@ -1,0 +1,67 @@
+.card {
+  position: relative;
+  margin: 0 0 22rem;
+  font-size: 3rem;
+  text-align: center;
+  .face {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 8rem 2rem;
+    background: linear-gradient(to bottom right, $white, darken($white, 10%));
+    box-shadow: .125rem .25rem .5rem rgba($black, .5);
+    min-height: 20rem;
+    border-radius: 1rem;
+    filter: opacity(1);
+    overflow: hidden;
+    transition: {
+      property: transform, filter;
+      duration: .25s;
+      timing-function: $cubic;
+    }
+    &.e {
+      font-family: 'Roboto', arial, sans-serif;
+    }
+    &.f {
+      font-family: 'Sacramento', cursive;
+    }
+    &:before, &:after {
+      content: '';
+      position: absolute;
+    }
+    &:before {
+      top: 0;
+      bottom: 0;
+      right: 0;
+      width: 1rem;
+      border-radius: 0 1rem 1rem 0;
+      background: linear-gradient(to right, transparent, lighten($black, 50%));
+    }
+    &:after {
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 1rem;
+      border-radius: 0 0 1rem 1rem;
+      background: linear-gradient(transparent, lighten($black, 50%));
+    }
+  }
+  .front {
+    backface-visibility: visible;
+  }
+  .back {
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+  }
+  &.show-answer {
+    .front {
+      backface-visibility: hidden;
+      transform: rotateY(180deg);
+    }
+    .back {
+      backface-visibility: visible;
+      transform: rotateY(360deg);
+    }
+  }
+}

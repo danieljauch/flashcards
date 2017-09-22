@@ -5,43 +5,47 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Flash Cards</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Sacramento" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <header class="site-header">
-    <section class="user">
+  <!-- <header class="site-header">
+    <section class="user daniel">
       <span class="name">Daniel</span>
       <i class="fa fa-user" aria-hidden="true"></i>
     </section>
-  </header>
-  <div class="wrap">
-    <section class="card">
-      <div class="face q"></div>
-      <div class="face a"></div>
+    <section class="user linzy">
+      <span class="name">Linzy</span>
+      <i class="fa fa-user" aria-hidden="true"></i>
     </section>
-    <button><i class="fa fa-refresh" aria-hidden="true"></i></button>
+  </header> -->
+  <div class="wrap">
+    <section class="card" id="card">
+      <div class="face front" id="front"></div>
+      <div class="face back" id="back"></div>
+    </section>
+    <button id="actionBtn"><i class="fa fa-refresh" aria-hidden="true"></i></button>
   </div>
   <footer class="site-footer">
     <article class="option">
-      <p>Test:
-        <select name="" id="">
-          <option value="">---</option>
-          <option value="">Nouns</option>
-          <option value="">Pronouns</option>
-          <option value="">Adjectives</option>
-          <option value="">Verbs</option>
-          <option value="">Adverbs</option>
-          <option value="">Prepositions</option>
-          <option value="">Conjunctions</option>
-          <option value="">Newest</option>
-          <option value="">My worst</option>
+      <p>Category:
+        <select id="categorySelect">
+          <option value="all">--- All ---</option>
+          <option value="noun">Nouns</option>
+          <option value="pron">Pronouns</option>
+          <option value="adj">Adjectives</option>
+          <option value="verb">Verbs</option>
+          <option value="adv">Adverbs</option>
+          <option value="prep">Prepositions</option>
+          <option value="conj">Conjunctions</option>
         </select></p>
-    </article>''
-    <article class="option">
-      <p>Score: <span class="points">1</span> / <span class="out-of">2</span></p>
     </article>
+    <!-- <article class="option">
+      <p>Score: <span class="points">1</span> / <span class="out-of">2</span></p>
+    </article> -->
   </footer>
-  <script src="js/script.js"></script>
+  <script src="https://use.fontawesome.com/620420abf1.js"></script>
+  <script src="js/app.js"></script>
 </body>
 </html>

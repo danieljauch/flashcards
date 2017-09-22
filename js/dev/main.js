@@ -1,70 +1,34 @@
-// score? progress? correct / incorrect buttons and counts by word? Keep track of words used this session
-$(document).ready(function () {
-  nextQuestion();
-  $('button').click(function (e) {
-    e.preventDefault();
-    if ($('.card').hasClass('show-answer')) {
-      $('.q, .a').addClass('hide');
+class Main {
+  constructor () {
+    this.con = new Controller();
+
+    this.actionBtn = document.getElementById('actionBtn');
+    this.card = document.getElementById('card');
+    this.front = document.getElementById('front');
+    this.back = document.getElementById('back');
+
+    this.nextQuestion();
+  }
+
+  nextQuestion() {
+    let qORa = Math.round(Math.random());
+    let which = Math.round(Math.random() * (vocab.length - 1));
+
+    this.running = false;
+    if (qORa) {
+      this.front.innerText = `Q: ${vocab[which]['french']}`;
+      this.front.classList.remove('e');
+      this.front.classList.add('f');
+      this.back.innerText = `A: ${vocab[which]['english']}`;
+      this.back.classList.remove('f');
+      this.back.classList.add('e');
+    } else {
+      this.front.innerText = `Q: ${vocab[which]['english']}`;
+      this.front.classList.remove('f');
+      this.front.classList.add('e');
+      this.back.innerText = `A: ${vocab[which]['french']}`;
+      this.back.classList.remove('e');
+      this.back.classList.add('f');
     }
-    $('.card').toggleClass('show-answer');
-    setTimeout(function () {
-      if (!$('.card').hasClass('show-answer')) {
-        nextQuestion();
-        $('.q, .a').removeClass('hide');
-      }
-    }, 250);
-  });
-});
-
-// needs part of speech, lesson limiters
-var vocab = [{
-    french: 'garçon',
-    english: 'boy',
-    pos: 'noun',
-    danielScore: 0,
-    linzyScore: 0,
-    dateAdded: ''
-  },{
-    french: 'fier ♂ / fiére ♀',
-    english: 'proud',
-    pos: 'adjective',
-    danielScore: 0,
-    linzyScore: 0,
-    dateAdded: ''
-  },{
-    french: 'to be',
-    english: 'être',
-    pos: 'verb',
-    danielScore: 0,
-    linzyScore: 0,
-    dateAdded: ''
-}];
-
-function newTest() {
-
-}
-function nextQuestion() {
-  var qORa = Math.round(Math.random()),
-      which = Math.round(Math.random() * (vocab.length - 1));
-  if (qORa) {
-    $('.q').text("Q: " + vocab[which]["french"]).removeClass('e').addClass('f');
-    $('.a').text("A: " + vocab[which]["english"]).removeClass('f').addClass('e');
-  } else {
-    $('.q').text("Q: " + vocab[which]["english"]).removeClass('f').addClass('e');
-    $('.a').text("A: " + vocab[which]["french"]).removeClass('e').addClass('f');
   }
 }
-
-// http://sites.psu.edu/symbolcodes/windows/codealt/
-/* - - - - - - - - - - - - - - - - - - - - - -+
- | À È Ì Ò Ù    | Grave Cap                   |
- | à è ì ò ù    | Grave Lower                 |
- | Á É Í Ó Ú Ý  | Acute Cap                   |
- | á é í ó ú ý  | Acute Lower                 |
- | Â Ê Î Ô Û    | Circumflex Cap              |
- | â ê î ô û    | Circumflex Lower            |
- | Ä Ë Ï Ö Ü Ÿ  | Umlaut Cap                  |
- | ä ë ï ö ü ÿ  | Umlaut Lower                |
- | Ç Œ Æ        | Cedille and Ligatures Cap   |
- | ç œ æ        | Cedille and Ligatures Lower |
- + - - - - - - - - - - - - - - - - - - - - - -+*/
