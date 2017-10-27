@@ -450,6 +450,222 @@ const vocab = [
   english: 'proud',
   french: 'fier / fiére',
   pos: 'adjective'
+},{
+  english: 'stingy',
+  french: 'avare',
+  pos: 'adjective'
+},{
+  english: 'expensive',
+  french: 'cher / chère',
+  pos: 'adjective'
+},{
+  english: 'orange',
+  french: 'orange',
+  pos: 'adjective'
+},{
+  english: 'brown',
+  french: 'marron',
+  pos: 'adjective'
+},{
+  english: 'yellow',
+  french: 'jaune',
+  pos: 'adjective'
+},{
+  english: 'pink',
+  french: 'rose',
+  pos: 'adjective'
+},{
+  english: 'purple',
+  french: 'violet / violette',
+  pos: 'adjective'
+},{
+  english: 'gray',
+  french: 'gris',
+  pos: 'adjective'
+},{
+  english: 'red',
+  french: 'rouge',
+  pos: 'adjective'
+},{
+  english: 'white',
+  french: 'blanc / blanche',
+  pos: 'adjective'
+},{
+  english: 'blue',
+  french: 'bleu / bleue',
+  pos: 'adjective'
+},{
+  english: 'green',
+  french: 'vert / verte',
+  pos: 'adjective'
+},{
+  english: 'black',
+  french: 'noir',
+  pos: 'adjective'
+},{
+  english: 'pessimistic',
+  french: 'pessimiste',
+  pos: 'adjective'
+},{
+  english: 'interesting',
+  french: 'intéressant',
+  pos: 'adjective'
+},{
+  english: 'practical',
+  french: 'practique',
+  pos: 'adjective'
+},{
+  english: 'conspiratorial',
+  french: 'conspirateur / conspiratrice',
+  pos: 'adjective'
+},{
+  english: 'poor',
+  french: 'pauvre',
+  pos: 'adjective'
+},{
+  english: 'final',
+  french: 'dernier / dernière',
+  pos: 'adjective'
+},{
+  english: 'old / former',
+  french: 'ancien / ancienne',
+  pos: 'adjective'
+},{
+  english: 'old (age)',
+  french: 'vieux / vieille / vieil',
+  pos: 'adjective'
+},{
+  english: 'beautiful / handsome',
+  french: 'beau / belle / bel',
+  pos: 'adjective'
+},{
+  english: 'new',
+  french: 'nouveau / nouvelle / nouvel',
+  pos: 'adjective'
+},{
+  english: 'small / short',
+  french: 'petit / petite',
+  pos: 'adjective'
+},{
+  english: 'young',
+  french: 'jeune',
+  pos: 'adjective'
+},{
+  english: 'big / tall',
+  french: 'grand / grande',
+  pos: 'adjective'
+},{
+  english: 'bad',
+  french: 'mauvais / mauvaise',
+  pos: 'adjective'
+},{
+  english: 'pretty',
+  french: 'joli / jolie',
+  pos: 'adjective'
+},{
+  english: 'good',
+  french: 'bon / bonne',
+  pos: 'adjective'
+},{
+  english: 'other',
+  french: 'autre',
+  pos: 'adjective'
+},{
+  english: 'courageous',
+  french: 'courageux / courageuse',
+  pos: 'adjective'
+},{
+  english: 'boring',
+  french: 'ennuyeux / ennuyeuse',
+  pos: 'adjective'
+},{
+  english: 'nice',
+  french: 'gentil / gentille',
+  pos: 'adjective'
+},{
+  english: 'hardworking',
+  french: 'travailleur / travailleuse',
+  pos: 'adjective'
+},{
+  english: 'serious',
+  french: 'sérieux / sérieuse',
+  pos: 'adjective'
+},{
+  english: 'athletic',
+  french: 'sportif / sportive',
+  pos: 'adjective'
+},{
+  english: 'generous',
+  french: 'généreux',
+  pos: 'adjective'
+},{
+  english: 'extraordinary',
+  french: 'extraordinaire',
+  pos: 'adjective'
+},{
+  english: 'optimistic',
+  french: 'optimiste',
+  pos: 'adjective'
+},{
+  english: 'inexpensive',
+  french: 'bon marché',
+  pos: 'adjective'
+},{
+  english: 'sorry',
+  french: 'désolé / désolée',
+  pos: 'adjective'
+},{
+  english: 'difficult',
+  french: 'difficile',
+  pos: 'adjective'
+},{
+  english: 'funny',
+  french: 'drôle',
+  pos: 'adjective'
+},{
+  english: 'intelligent',
+  french: 'intelligent',
+  pos: 'adjective'
+},{
+  english: 'sincere',
+  french: 'sincère',
+  pos: 'adjective'
+},{
+  english: 'conservative',
+  french: 'conservateur / conservatrice',
+  pos: 'adjective'
+},{
+  english: 'sturdy',
+  french: 'costaud / costaude',
+  pos: 'adjective'
+},{
+  english: 'lazy',
+  french: 'paresseux / paresseuse',
+  pos: 'adjective'
+},{
+  english: 'pleasant',
+  french: 'agréable',
+  pos: 'adjective'
+},{
+  english: 'same',
+  french: 'même',
+  pos: 'adjective'
+},{
+  english: 'fat / big',
+  french: 'gros / grosse',
+  pos: 'adjective'
+},{
+  english: 'happy / content',
+  french: 'content / contente',
+  pos: 'adjective'
+},{
+  english: 'natural',
+  french: 'naturel / naturelle',
+  pos: 'adjective'
+},{
+  english: 'naïve',
+  french: 'naïf / naïve',
+  pos: 'adjective'
 },
 // Verbs
 {
@@ -458,7 +674,71 @@ const vocab = [
   pos: 'verb'
 },
 // Adverbs
-
+{
+  english: 'fairly / rather',
+  french: 'assez / plutôt',
+  pos: 'adverb'
+},{
+  english: 'enough (of)',
+  french: 'assez (de)',
+  pos: 'adverb'
+},{
+  english: 'often',
+  french: 'souvent',
+  pos: 'adverb'
+},{
+  english: 'now',
+  french: 'maintenant',
+  pos: 'adverb'
+},{
+  english: 'here',
+  french: 'ici',
+  pos: 'adverb'
+},{
+  english: 'how',
+  french: 'comment',
+  pos: 'adverb'
+},{
+  english: 'hardly / not very',
+  french: 'peu',
+  pos: 'adverb'
+},{
+  english: 'a little (of)',
+  french: 'un peu (de)',
+  pos: 'adverb'
+},{
+  english: 'always',
+  french: 'toujours',
+  pos: 'adverb'
+},{
+  english: 'too (much, many)',
+  french: 'trop (de)',
+  pos: 'adverb'
+},{
+  english: 'very',
+  french: 'très',
+  pos: 'adverb'
+},{
+  english: 'sometimes',
+  french: 'quelquefois / parfois',
+  pos: 'adverb'
+},{
+  english: 'much / many',
+  french: 'beaucoup',
+  pos: 'adverb'
+},{
+  english: 'rarely',
+  french: 'rarement',
+  pos: 'adverb'
+},{
+  english: 'today',
+  french: 'aujourd\'hui',
+  pos: 'adverb'
+},{
+  english: 'well',
+  french: 'bien',
+  pos: 'adverb'
+},
 // Conjunctions
 {
   english: 'but',
